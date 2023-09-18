@@ -9,11 +9,13 @@
 4.**MachineRefillSubscriber**: Implement MachineRefillSubscriber. It should increase the stock quantity of the machine.
 
 **Additional Behavior**
+
 1.**Low Stock Warning**: If a machine stock level drops below 3, a new LowStockWarningEvent should be generated.
 
 2.**Stock Level OK**: When the stock levels hit 3 or above (because of a MachineRefillEvent), a StockLevelOkEvent should be generated. For each machine, LowStockWarningEvent or StockLevelOkEvent should only fire one time when crossing the threshold of 3.
 
 **Implementation Details**
+
 The codebase is organized as follows:
 
 **IPublishSubscribeService**: Interface defining the contract for the Publish-Subscribe service.
