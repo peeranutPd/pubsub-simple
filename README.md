@@ -1,4 +1,5 @@
 **Build the Publish-Subscribe Mechanism**
+
 1.**ISubscriber Registration**: Allow ISubscriber objects to register against a concrete IPublishSubscribeService object for an event type.
 
 2.**Publish Method: Implement** the publish method so that when a publish event occurs, all subscribers of that event type will have a chance to handle the event. Subscribers should work off a shared array of Machine objects, mutating them depending on the event received.
